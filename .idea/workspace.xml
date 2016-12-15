@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="781c1014-aacc-4b56-a5a5-f40107a6a357" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/js/vwa-controller.js" afterPath="$PROJECT_DIR$/build/resources/main/static/js/vwa-controller.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1225,7 +1219,7 @@
       <workItem from="1481817646527" duration="356000" />
       <workItem from="1481819820539" duration="6000" />
       <workItem from="1481820528562" duration="1212000" />
-      <workItem from="1481822409506" duration="15898000" />
+      <workItem from="1481822409506" duration="15983000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionado controller e pequeno formulario.">
       <created>1481770921023</created>
@@ -1248,11 +1242,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481838687789</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Versão 1.4.8 vulneravel do AngularJS - Passando o Expression Sandbox para XSS">
+      <created>1481838727548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1481838727548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25338000" />
+    <option name="totallyTimeSpent" value="25423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="740" extended-state="0" />
