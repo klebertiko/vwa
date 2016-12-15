@@ -9,9 +9,12 @@
 <div class="container">
     <h1>Vulnerable Web App</h1>
     <div ng-controller="helloController">
-        Digite seu nome: <input type="text" ng-model="nomeUsuario"/><br>
-        <button ng-click="postOla()" class="btn">Enviar...</button><br>
-        <p>Mensagem: {{mensagem}} {{nome}}</p>
+        <input type="text" ng-model="textoEnvio"/><br><br>
+        <button ng-click="postOla()" class="btn">Enviar seu nome para a página</button><br><br>
+        <button ng-click="criaArquivo()" class="btn">Enviar seu nome para arquivo</button><br><br>
+        <button ng-click="executarComando()" class="btn">Enviar comando para Linux</button><br><br>
+        <button ng-click="enviarScript()" class="btn">Enviar scripts para a página</button><br><br>
+        <p>{{mensagemRetorno}}</p>
     </div>
 </div>
 

@@ -3,6 +3,7 @@ buildscript {
         springBootVersion = '1.4.2.RELEASE'
         angularJSVersion = '1.4.8'
         bootstrapVersion = '3.3.6'
+        commonsIOVersion = '2.5'
 
     }
     repositories {
@@ -42,6 +43,7 @@ dependencies {
 
     compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
     compile "org.springframework.boot:spring-boot-starter-undertow:$springBootVersion"
+    compile "commons-io:commons-io:$commonsIOVersion"
 
     testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
 }
