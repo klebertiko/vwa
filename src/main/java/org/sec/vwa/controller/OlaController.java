@@ -20,9 +20,9 @@ public class OlaController {
     }
 
     @RequestMapping(value = "/postOla", method = RequestMethod.POST)
-    public Mensagem postOla(@RequestBody String nome) {
+    public Mensagem postOla(@RequestBody String nomeUsuario) {
         Mensagem mensagem = new Mensagem();
-        mensagem.setNome(nome);
+        mensagem.setNome(nomeUsuario);
         mensagem.setMensagem("Olá");
         return mensagem;
     }

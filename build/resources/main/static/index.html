@@ -9,15 +9,15 @@
 <div class="container">
     <h1>Vulnerable Web App</h1>
     <div ng-controller="helloController">
-        Digite seu nome: <input type="text" ng-model="nome"/><br>
+        Digite seu nome: <input type="text" ng-model="nomeUsuario"/><br>
         <button ng-click="postOla()" class="btn">Enviar...</button><br>
-        <p>Mensagem: {{mensagem.mensagem}} {{mensagem.nome}}</p>
+        <p>Mensagem: {{mensagem}} {{nome}}</p>
     </div>
 </div>
 
-<script src="/webjars/angularjs/1.4.9/angular.js"></script>
-<script src="/webjars/angularjs/1.4.9/angular-resource.js"></script>
-<script src="/webjars/angularjs/1.4.9/angular-route.js"></script>
+<script src="/webjars/angularjs/1.4.8/angular.js"></script>
+<script src="/webjars/angularjs/1.4.8/angular-resource.js"></script>
+<script src="/webjars/angularjs/1.4.8/angular-route.js"></script>
 <script src="/js/vwa.js"></script>
 <script src="/js/vwa-controller.js"></script>
 <link rel="stylesheet" href="/webjars/bootstrap/3.3.6/css/bootstrap.css">

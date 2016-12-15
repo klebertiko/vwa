@@ -3,19 +3,22 @@
  */
 vwa.controller('helloController', function($scope, $http) {
 
-    $http.get('/getOla')
+    /*$http.get('/getOla')
         .then(function (response) {
             $scope.mensagem = response.data;
-        });
+        });*/
 
     $scope.postOla = function postOla() {
-        if($scope.nome == "" || $scope.nome == undefined) {
+        if($scope.nomeUsuario == "" || $scope.nomeUsuario == undefined) {
             alert("Digite seu nome!");
         } else {
-            $http.post('/postOla', $scope.nome)
+            $scope.mensagem = "Olá ";
+            $scope.nome = $scope.nomeUsuario;
+
+            /*$http.post('/postOla', $scope.nomeUsuario)
                 .then(function (response) {
                     $scope.mensagem = response.data;
-                });
+                });*/
         }
     }
 });
