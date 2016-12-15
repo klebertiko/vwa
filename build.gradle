@@ -1,7 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '1.4.2.RELEASE'
-        angularJSVersion = '1.4.9'
+        angularJSVersion = '1.4.8'
         bootstrapVersion = '3.3.6'
 
     }
