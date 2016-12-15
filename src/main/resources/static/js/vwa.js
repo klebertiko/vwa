@@ -3,9 +3,8 @@
  */
 var vwa = angular.module('vwa', ['ngRoute','ngResource']);
 vwa.config(function($routeProvider) {
-    $routeProvider
-        .when('/hello', {
-            templateUrl: '/index.html',
-            controller: 'helloController'
-        });
+    $routeProvider.when('/getOla', {
+        templateUrl: '/index.html',
+        controller: 'helloController'
+    });
 });

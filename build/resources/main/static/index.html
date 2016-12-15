@@ -9,7 +9,9 @@
 <div class="container">
     <h1>Vulnerable Web App</h1>
     <div ng-controller="helloController">
-        <p>Mensagem: {{hello}}</p>
+        Digite seu nome: <input type="text" ng-model="nome"/><br>
+        <button ng-click="postOla()" class="btn">Enviar...</button><br>
+        <p>Mensagem: {{mensagem.mensagem}} {{mensagem.nome}}</p>
     </div>
 </div>
 
