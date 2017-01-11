@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class VWAController {
 
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String home(Model model) {
         return "home";
     }
 
-    @RequestMapping("/banana")
-    public String banana(@RequestParam(value="message") String message, Model model) {
+    @RequestMapping("/xss")
+    public String xss(@RequestParam(value="message") String message, Model model) {
         model.addAttribute("message", message);
-        return "banana";
+        return "xss";
     }
 }
