@@ -17,9 +17,12 @@ import java.util.Arrays;
  */
 public class FileUtils {
 
-    public File createFile(String content, String fileName) throws IOException {
-        Path file = Paths.get("/tmp/" + fileName + ".txt");
-        return Files.write(file, Arrays.asList(content), Charset.forName("UTF-8")).toFile();
+    public File createFile(String fileName) {
+        return new File(fileName);
+    }
+
+    public File writeInFile(String content, File file) throws IOException {
+        return Files.write(file.toPath(), Arrays.asList(content), Charset.forName("UTF-8")).toFile();
     }
 
     public String fileToString(Path filePath) throws IOException {
