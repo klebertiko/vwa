@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fba35bb-21cf-43ce-acf7-96777eb5c46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/vwa-login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/vwa-sidebar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/vwa-sidebar.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/vwa.iml" afterPath="$PROJECT_DIR$/.idea/modules/vwa.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/static/js/vwa-sidebar.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAMvcConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAMvcConfiguration.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/sec/vwa/controller/VWAController.java" afterPath="$PROJECT_DIR$/src/main/java/org/sec/vwa/controller/VWAController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/sec/vwa/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/sec/vwa/utils/FileUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
     </list>
@@ -60,18 +52,18 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="69" column="57" lean-forward="true" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+            <state relative-caret-position="976">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="188">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,17 +73,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="25" selection-end-column="43" />
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VWAController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VWAController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/sec/vwa/controller/VWAController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="216">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
@@ -171,11 +163,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/css/vwa-sidebar.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/vwa-sidebar.js" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/vwa-sidebar.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/sec/vwa/controller/VWAController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
       </list>
     </option>
   </component>
@@ -341,36 +333,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vwa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vwa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1047,7 +1009,7 @@
       <workItem from="1484179376925" duration="1340000" />
       <workItem from="1484180817806" duration="6015000" />
       <workItem from="1484236134677" duration="5000" />
-      <workItem from="1484237333074" duration="9167000" />
+      <workItem from="1484237333074" duration="9469000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionando problemas de segurança">
       <created>1484170742859</created>
@@ -1098,11 +1060,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484186812743</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adicionado Path Traversal, implementar api e tela para o msm.">
+      <created>1484246779464</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1484246779464</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40072000" />
+    <option name="totallyTimeSpent" value="40374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="340" width="1366" height="740" extended-state="0" />
@@ -1401,26 +1370,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="69" column="57" lean-forward="true" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+        <state relative-caret-position="130">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/sec/vwa/VWAWebSecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="188">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/sec/vwa/controller/VWAController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="216">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#296#297#0" expanded="true" />
@@ -1428,14 +1405,6 @@
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#412#413#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>

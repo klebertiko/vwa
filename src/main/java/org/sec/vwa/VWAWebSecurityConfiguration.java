@@ -23,7 +23,6 @@ public class VWAWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
             .formLogin()
                 .loginPage("/login")
                 .permitAll()
-                .successForwardUrl("/home")
                 .and()
             .logout()
                 .permitAll();
