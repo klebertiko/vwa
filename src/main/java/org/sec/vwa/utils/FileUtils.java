@@ -25,8 +25,8 @@ public class FileUtils {
         return Files.write(file.toPath(), Arrays.asList(content), Charset.forName("UTF-8")).toFile();
     }
 
-    public String fileToString(Path filePath) throws IOException {
-        InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(filePath.toFile()), "UTF-8");
+    public String fileToString(File file) throws IOException {
+        InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(file), "UTF-8");
         return IOUtils.toString(inputStreamReader);
     }
 }

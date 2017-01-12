@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
-        <title>Spring Security Example </title>
-    </head>
-    <body>
-        <div th:if="${param.error}">
-            Invalid username and password.
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vulnerable Web App</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <form class="form-signin" th:action="@{/login}" method="post">
+                <h2 class="form-signin-heading">Vulnerable Web App</h2>
+
+                <table class="table table-sm table-responsive">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Senha</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin</td>
+                    </tr>
+                    <tr>
+                        <td>user</td>
+                        <td>user</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-danger" th:if="${param.error}">
+                    Usuário e/ou senha inválidos.
+                </div>
+                <div class="alert alert-warning" th:if="${param.logout}">
+                    Você saiu...
+                </div>
+
+                <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus=""/>
+                <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            </form>
         </div>
-        <div th:if="${param.logout}">
-            You have been logged out.
-        </div>
-        <form th:action="@{/login}" method="post" action="hello.html">
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Sign In"/></div>
-        </form>
-    </body>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="/css/vwa-login.css"/>
+<link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.css"/>
+
+<script src="/webjars/jquery/3.1.1-1/jquery.js"></script>
+<script src="/webjars/bootstrap/3.3.7/css/bootstrap.js"></script>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
 </html>

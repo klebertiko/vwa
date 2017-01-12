@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
-        <title>Spring Security Example</title>
-    </head>
-    <body>
-        <h1>Welcome!</h1>
-        
-        <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
-    </body>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Vulnerable Web App</title>
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">VWA</a>
+            </li>
+            <li>
+                <a th:href="@{/home}"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a href="#">####</a>
+            </li>
+            <li>
+                <a href="#">####</a>
+            </li>
+            <li>
+                <a th:href="@{/logout}"><i class="fa fa-fw fa-sign-out"></i> Sair</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header" th:inline="text">Olá [[${#httpServletRequest.remoteUser}]]!</h1>
+
+                    <p class="lead">Bem vindo ao Vulnerable Web App, aqui você irá testar seus conhecimentos em
+                        exploração de vulnerabilidades em sistemas Web.</p>
+
+                    <table class="table table-sm table-responsive">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th>Session</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Thymeleaf ${session}</td>
+                            <td>HttpSession ID</td>
+                        </tr>
+                        <tr>
+                            <td th:text="${session}"></td>
+                            <td th:text="${#httpSession.id}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="/css/vwa-sidebar.css"/>
+<link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.css"/>
+
+<script src="/js/vwa-sidebar.js"></script>
+<script src="/webjars/jquery/3.1.1-1/jquery.js"></script>
+<script src="/webjars/bootstrap/3.3.7/css/bootstrap.js"></script>
+</body>
 </html>

@@ -15,12 +15,15 @@ public class VWAWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http
             .csrf().disable()
             .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/webjars/**",
+                        "/css/*",
+                        "/js/*").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
                 .loginPage("/login")
                 .permitAll()
+                .successForwardUrl("/home")
                 .and()
             .logout()
                 .permitAll();
@@ -29,13 +32,13 @@ public class VWAWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .inMemoryAuthentication()
-                .withUser("admin")
-                .password("admin")
-                .roles("ADMIN", "USER")
-                .and()
-                .withUser("user")
-                .password("user")
-                .roles("USER");
+            .inMemoryAuthentication()
+            .withUser("admin")
+            .password("admin")
+            .roles("ADMIN", "USER")
+            .and()
+            .withUser("user")
+            .password("user")
+            .roles("USER");
     }
 }
