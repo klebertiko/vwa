@@ -7,36 +7,33 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-
 @Configuration
 @EnableWebSecurity
 public class VWAWebSecurityConfiguration extends WebSecurityConfigurerAdapter {
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
         http
             .csrf().disable()
             .authorizeRequests()
-                .anyRequest().fullyAuthenticated()
-            .and()
-                .formLogin()
-                    .loginPage("/login")
-                    .failureUrl("/login?error")
-                    .permitAll()
-            .and()
-                .logout()
-                    .permitAll();
+                .antMatchers("/").permitAll()
+                .anyRequest().authenticated()
+                .and()
+            .formLogin()
+                .loginPage("/login")
+                .permitAll()
+                .and()
+            .logout()
+                .permitAll();
     }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
-            .inMemoryAuthentication()
+                .inMemoryAuthentication()
                 .withUser("admin")
                 .password("admin")
                 .roles("ADMIN", "USER")
-            .and()
+                .and()
                 .withUser("user")
                 .password("user")
                 .roles("USER");
